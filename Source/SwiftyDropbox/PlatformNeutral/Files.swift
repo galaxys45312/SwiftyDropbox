@@ -908,6 +908,8 @@ open class Files {
         /// Deprecated. Please use parentSharedFolderId in FileSharingInfo or parentSharedFolderId in FolderSharingInfo
         /// instead.
         open let parentSharedFolderId: String?
+        open var isDir = false
+        
         public init(name: String, pathLower: String? = nil, pathDisplay: String? = nil, parentSharedFolderId: String? = nil) {
             stringValidator()(name)
             self.name = name
@@ -1142,6 +1144,7 @@ open class Files {
         open let sharingInfo: Files.FileSharingInfo?
         /// Additional information if the file has custom properties with the property template specified.
         open let propertyGroups: Array<Properties.PropertyGroup>?
+        
         /// This flag will only be present if include_has_explicit_shared_members  is true in listFolder or getMetadata.
         /// If this  flag is present, it will be true if this file has any explicit shared  members. This is different
         /// from sharing_info in that this could be true  in the case where a file has explicit members but is not
@@ -1295,6 +1298,7 @@ open class Files {
             nullableValidator(stringValidator(pattern: "[-_0-9a-zA-Z:]+"))(sharedFolderId)
             self.sharedFolderId = sharedFolderId
             self.sharingInfo = sharingInfo
+            metadata.isDir = true
             self.propertyGroups = propertyGroups
             super.init(name: name, pathLower: pathLower, pathDisplay: pathDisplay, parentSharedFolderId: parentSharedFolderId)
         }

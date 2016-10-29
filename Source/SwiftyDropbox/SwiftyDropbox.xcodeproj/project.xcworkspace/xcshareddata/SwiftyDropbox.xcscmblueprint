@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AD29063FCB68D7F5F96726FDF73102AFB71B47B4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AD29063FCB68D7F5F96726FDF73102AFB71B47B4" : 9223372036854775807,
+    "760B324D67FD2B5895E0BE0286EDA939411D5918" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "05BA46F1-6A22-4FB0-916E-ED18E3CFEDEE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AD29063FCB68D7F5F96726FDF73102AFB71B47B4" : "SwiftyDropbox\/",
+    "760B324D67FD2B5895E0BE0286EDA939411D5918" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SwiftyDropbox",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Source\/SwiftyDropbox\/SwiftyDropbox.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/galaxys45312\/markdown.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "760B324D67FD2B5895E0BE0286EDA939411D5918"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/galaxys45312\/SwiftyDropbox",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AD29063FCB68D7F5F96726FDF73102AFB71B47B4"
+    }
+  ]
+}
