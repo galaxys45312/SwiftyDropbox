@@ -1292,15 +1292,16 @@ open class Files {
         open let sharingInfo: Files.FolderSharingInfo?
         /// Additional information if the file has custom properties with the property template specified.
         open let propertyGroups: Array<Properties.PropertyGroup>?
-        public init(name: String, id: String, pathLower: String? = nil, pathDisplay: String? = nil, parentSharedFolderId: String? = nil, sharedFolderId: String? = nil, sharingInfo: Files.FolderSharingInfo? = nil, propertyGroups: Array<Properties.PropertyGroup>? = nil) {
+        public init(name: String, id: String,  pathLower: String? = nil, pathDisplay: String? = nil, parentSharedFolderId: String? = nil, sharedFolderId: String? = nil, sharingInfo: Files.FolderSharingInfo? = nil, propertyGroups: Array<Properties.PropertyGroup>? = nil) {
             stringValidator(minLength: 1)(id)
             self.id = id
             nullableValidator(stringValidator(pattern: "[-_0-9a-zA-Z:]+"))(sharedFolderId)
             self.sharedFolderId = sharedFolderId
             self.sharingInfo = sharingInfo
-            self.isDir = true
             self.propertyGroups = propertyGroups
             super.init(name: name, pathLower: pathLower, pathDisplay: pathDisplay, parentSharedFolderId: parentSharedFolderId)
+            
+            self.isDir = true
         }
         open override var description: String {
             return "\(SerializeUtil.prepareJSONForSerialization(FolderMetadataSerializer().serialize(self)))"
