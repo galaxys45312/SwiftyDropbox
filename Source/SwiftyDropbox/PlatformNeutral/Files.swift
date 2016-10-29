@@ -1298,7 +1298,7 @@ open class Files {
             nullableValidator(stringValidator(pattern: "[-_0-9a-zA-Z:]+"))(sharedFolderId)
             self.sharedFolderId = sharedFolderId
             self.sharingInfo = sharingInfo
-            metadata.isDir = true
+            self.isDir = true
             self.propertyGroups = propertyGroups
             super.init(name: name, pathLower: pathLower, pathDisplay: pathDisplay, parentSharedFolderId: parentSharedFolderId)
         }
